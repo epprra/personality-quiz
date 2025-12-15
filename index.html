@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Personality Quiz</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <main id="app">
-    <h1>Personality Quiz</h1>
+<main id="app">
+  <h1>Personality Quiz</h1>
 
-    <div id="quiz">
-      <div id="question"></div>
-      <div id="options"></div>
-      <button id="nextBtn" disabled>Next</button>
-    </div>
+  <div id="quiz">
+    <div id="progress"></div>
+    <div id="question"></div>
+    <div id="options"></div>
+    <button id="nextBtn" disabled>Next</button>
+  </div>
 
-    <div id="result" hidden>
-      <h2>Your Result</h2>
-      <div id="resultsList"></div>
-      <div id="tag" class="tag"></div>
-      <p><strong>Your Code:</strong></p>
-      <div id="tag"></div>
-      <p class="warning">
-        Save this code. It cannot be recovered.
-      </p>
-    </div>
-  </main>
+  <div id="result" hidden>
+    <h2>Your Result</h2>
+    <div id="resultsList"></div>
 
-  <script src="app.js"></script>
+    <p><strong>Your Code:</strong></p>
+    <div id="tag" class="tag"></div>
+
+    <p class="warning">
+      Save this code. It cannot be recovered.
+    </p>
+  </div>
+</main>
+
+<script src="app.js"></script>
 </body>
 </html>
-
