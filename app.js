@@ -197,9 +197,31 @@ function finalizeQuiz() {
   quizEl.hidden = true;
   resultEl.hidden = false;
 
-  scoreOutput.textContent = JSON.stringify(scores, null, 2);
-  tagEl.textContent = tag;
+  renderResults(scores);
+tagEl.textContent = tag;
+  
+function renderResults(scores) {
+  const container = document.getElementById("resultsList");
+  container.innerHTML = "";
 
+  const max = Math.max(...Object.values(scores));
+
+  for (const trait in scores) {
+    const percent = Math.round((scores[trait] / max) * 100);
+
+    const row = document.createElement("div");
+    row.classList.add("result-row");
+
+    row.innerHTML = `
+      <div class="result-label">${trait}</div>
+      <div class="result-bar">
+        <div class="result-fill" style="width: ${percent}%"></div>
+      </div>
+    `;
+
+    container.appendChild(row);
+  }
+}
   // Supabase insert happens later — NOT YET
 }
 
