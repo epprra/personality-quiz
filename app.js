@@ -12,6 +12,104 @@ const questions = [
       { text: "Rational and analyzed", effects: { logic: 10 } },
       { text: "Based on feeling and instinct", effects: { emotion: 10 } }
     ]
+  },
+  {
+    text: "Your workspace is usually:",
+    options: [
+      { text: "Organized and intentional", effects: { structure: 10 } },
+      { text: "Messy but functional", effects: { chaos: 10 } }
+    ]
+  },
+  {
+    text: "When under pressure, you tend to:",
+    options: [
+      { text: "Focus and problem-solve", effects: { logic: 10 } },
+      { text: "React emotionally", effects: { emotion: 10 } }
+    ]
+  },
+  {
+    text: "You value rules because:",
+    options: [
+      { text: "They create consistency", effects: { structure: 10 } },
+      { text: "They can be bent or broken", effects: { chaos: 10 } }
+    ]
+  },
+  {
+    text: "You prefer projects that are:",
+    options: [
+      { text: "Well-defined", effects: { structure: 5, logic: 5 } },
+      { text: "Open-ended", effects: { chaos: 5, emotion: 5 } }
+    ]
+  },
+  {
+    text: "You make choices faster when:",
+    options: [
+      { text: "You have all the data", effects: { logic: 10 } },
+      { text: "You trust your gut", effects: { emotion: 10 } }
+    ]
+  },
+  {
+    text: "Your creative process is:",
+    options: [
+      { text: "Methodical", effects: { structure: 10 } },
+      { text: "Explosive and chaotic", effects: { chaos: 10 } }
+    ]
+  },
+  {
+    text: "You dislike situations that are:",
+    options: [
+      { text: "Unpredictable", effects: { structure: 10 } },
+      { text: "Overly rigid", effects: { chaos: 10 } }
+    ]
+  },
+  {
+    text: "When learning, you prefer:",
+    options: [
+      { text: "Clear explanations", effects: { logic: 10 } },
+      { text: "Experiential discovery", effects: { emotion: 10 } }
+    ]
+  },
+  {
+    text: "Your strengths are strongest in:",
+    options: [
+      { text: "Analysis", effects: { logic: 10 } },
+      { text: "Empathy", effects: { emotion: 10 } }
+    ]
+  },
+  {
+    text: "You feel better when life is:",
+    options: [
+      { text: "Predictable", effects: { structure: 10 } },
+      { text: "Spontaneous", effects: { chaos: 10 } }
+    ]
+  },
+  {
+    text: "You judge success by:",
+    options: [
+      { text: "Efficiency", effects: { logic: 10 } },
+      { text: "Fulfillment", effects: { emotion: 10 } }
+    ]
+  },
+  {
+    text: "You handle change by:",
+    options: [
+      { text: "Planning ahead", effects: { structure: 10 } },
+      { text: "Adapting on the fly", effects: { chaos: 10 } }
+    ]
+  },
+  {
+    text: "Your instincts lean toward:",
+    options: [
+      { text: "Reason", effects: { logic: 10 } },
+      { text: "Feeling", effects: { emotion: 10 } }
+    ]
+  },
+  {
+    text: "You value systems that are:",
+    options: [
+      { text: "Stable", effects: { structure: 10 } },
+      { text: "Flexible", effects: { chaos: 10 } }
+    ]
   }
 ];
 
