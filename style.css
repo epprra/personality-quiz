@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background: #0f0f0f;
+  color: #f2f2f2;
+  font-family: system-ui, sans-serif;
+}
+
+#app {
+  max-width: 640px;
+  margin: auto;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: #222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.warning {
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: #aaa;
+}
