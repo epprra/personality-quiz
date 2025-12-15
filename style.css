@@ -52,3 +52,34 @@ button:disabled {
   background: #2b2b2b;
   border-color: #888;
 }
+
+.result-row {
+  margin: 10px 0;
+}
+
+.result-label {
+  font-size: 0.9em;
+  margin-bottom: 4px;
+}
+
+.result-bar {
+  height: 10px;
+  background: #333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.result-fill {
+  height: 100%;
+  background: #777;
+}
+
+.tag {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  padding: 12px;
+  background: #1a1a1a;
+  border: 1px solid #444;
+  display: inline-block;
+  margin-top: 10px;
+}
