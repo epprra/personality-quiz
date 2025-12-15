@@ -140,15 +140,23 @@ function renderQuestion() {
   selectedEffects = null;
 
   q.options.forEach(option => {
-    const btn = document.createElement("button");
-    btn.textContent = option.text;
-    btn.onclick = () => {
-      selectedEffects = option.effects;
-      nextBtn.disabled = false;
-    };
-    optionsEl.appendChild(btn);
-  });
-}
+  const btn = document.createElement("button");
+  btn.textContent = option.text;
+  btn.classList.add("option");
+
+  btn.onclick = () => {
+    // clear previous selection
+    document.querySelectorAll(".option").forEach(b =>
+      b.classList.remove("selected")
+    );
+
+    btn.classList.add("selected");
+    selectedEffects = option.effects;
+    nextBtn.disabled = false;
+  };
+
+  optionsEl.appendChild(btn);
+});
 
 nextBtn.onclick = () => {
   for (const trait in selectedEffects) {
