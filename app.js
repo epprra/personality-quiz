@@ -1,15 +1,7 @@
 const quizData = [
+  // I vs E
   {
-    question: "You prefer planning over improvising.",
-    options: [
-      { text: "Strongly agree", effects: { J: 2 } },
-      { text: "Somewhat agree", effects: { J: 1 } },
-      { text: "Somewhat disagree", effects: { P: 1 } },
-      { text: "Strongly disagree", effects: { P: 2 } }
-    ]
-  },
-  {
-    question: "You recharge best when alone.",
+    question: "You feel drained after long social interactions.",
     options: [
       { text: "Strongly agree", effects: { I: 2 } },
       { text: "Somewhat agree", effects: { I: 1 } },
@@ -18,7 +10,74 @@ const quizData = [
     ]
   },
   {
-    question: "You rely more on logic than emotion.",
+    question: "You prefer working alone rather than in groups.",
+    options: [
+      { text: "Strongly agree", effects: { I: 2 } },
+      { text: "Somewhat agree", effects: { I: 1 } },
+      { text: "Somewhat disagree", effects: { E: 1 } },
+      { text: "Strongly disagree", effects: { E: 2 } }
+    ]
+  },
+  {
+    question: "You often initiate conversations with strangers.",
+    options: [
+      { text: "Strongly agree", effects: { E: 2 } },
+      { text: "Somewhat agree", effects: { E: 1 } },
+      { text: "Somewhat disagree", effects: { I: 1 } },
+      { text: "Strongly disagree", effects: { I: 2 } }
+    ]
+  },
+  {
+    question: "Being alone helps you reset mentally.",
+    options: [
+      { text: "Strongly agree", effects: { I: 2 } },
+      { text: "Somewhat agree", effects: { I: 1 } },
+      { text: "Somewhat disagree", effects: { E: 1 } },
+      { text: "Strongly disagree", effects: { E: 2 } }
+    ]
+  },
+
+  // S vs N
+  {
+    question: "You trust experience over theories.",
+    options: [
+      { text: "Strongly agree", effects: { S: 2 } },
+      { text: "Somewhat agree", effects: { S: 1 } },
+      { text: "Somewhat disagree", effects: { N: 1 } },
+      { text: "Strongly disagree", effects: { N: 2 } }
+    ]
+  },
+  {
+    question: "You enjoy thinking about abstract concepts.",
+    options: [
+      { text: "Strongly agree", effects: { N: 2 } },
+      { text: "Somewhat agree", effects: { N: 1 } },
+      { text: "Somewhat disagree", effects: { S: 1 } },
+      { text: "Strongly disagree", effects: { S: 2 } }
+    ]
+  },
+  {
+    question: "Details matter more than big ideas.",
+    options: [
+      { text: "Strongly agree", effects: { S: 2 } },
+      { text: "Somewhat agree", effects: { S: 1 } },
+      { text: "Somewhat disagree", effects: { N: 1 } },
+      { text: "Strongly disagree", effects: { N: 2 } }
+    ]
+  },
+  {
+    question: "You often think about future possibilities.",
+    options: [
+      { text: "Strongly agree", effects: { N: 2 } },
+      { text: "Somewhat agree", effects: { N: 1 } },
+      { text: "Somewhat disagree", effects: { S: 1 } },
+      { text: "Strongly disagree", effects: { S: 2 } }
+    ]
+  },
+
+  // T vs F
+  {
+    question: "Logic is more important than harmony.",
     options: [
       { text: "Strongly agree", effects: { T: 2 } },
       { text: "Somewhat agree", effects: { T: 1 } },
@@ -27,20 +86,71 @@ const quizData = [
     ]
   },
   {
-    question: "You focus on possibilities more than facts.",
+    question: "You prioritize honesty over tact.",
     options: [
-      { text: "Strongly agree", effects: { N: 2 } },
-      { text: "Somewhat agree", effects: { N: 1 } },
-      { text: "Somewhat disagree", effects: { S: 1 } },
-      { text: "Strongly disagree", effects: { S: 2 } }
+      { text: "Strongly agree", effects: { T: 2 } },
+      { text: "Somewhat agree", effects: { T: 1 } },
+      { text: "Somewhat disagree", effects: { F: 1 } },
+      { text: "Strongly disagree", effects: { F: 2 } }
+    ]
+  },
+  {
+    question: "You make decisions based on personal values.",
+    options: [
+      { text: "Strongly agree", effects: { F: 2 } },
+      { text: "Somewhat agree", effects: { F: 1 } },
+      { text: "Somewhat disagree", effects: { T: 1 } },
+      { text: "Strongly disagree", effects: { T: 2 } }
+    ]
+  },
+  {
+    question: "You dislike emotional decision-making.",
+    options: [
+      { text: "Strongly agree", effects: { T: 2 } },
+      { text: "Somewhat agree", effects: { T: 1 } },
+      { text: "Somewhat disagree", effects: { F: 1 } },
+      { text: "Strongly disagree", effects: { F: 2 } }
+    ]
+  },
+
+  // J vs P
+  {
+    question: "You prefer structured schedules.",
+    options: [
+      { text: "Strongly agree", effects: { J: 2 } },
+      { text: "Somewhat agree", effects: { J: 1 } },
+      { text: "Somewhat disagree", effects: { P: 1 } },
+      { text: "Strongly disagree", effects: { P: 2 } }
+    ]
+  },
+  {
+    question: "You like to keep your options open.",
+    options: [
+      { text: "Strongly agree", effects: { P: 2 } },
+      { text: "Somewhat agree", effects: { P: 1 } },
+      { text: "Somewhat disagree", effects: { J: 1 } },
+      { text: "Strongly disagree", effects: { J: 2 } }
+    ]
+  },
+  {
+    question: "Last-minute changes stress you out.",
+    options: [
+      { text: "Strongly agree", effects: { J: 2 } },
+      { text: "Somewhat agree", effects: { J: 1 } },
+      { text: "Somewhat disagree", effects: { P: 1 } },
+      { text: "Strongly disagree", effects: { P: 2 } }
+    ]
+  },
+  {
+    question: "You prefer flexibility over planning.",
+    options: [
+      { text: "Strongly agree", effects: { P: 2 } },
+      { text: "Somewhat agree", effects: { P: 1 } },
+      { text: "Somewhat disagree", effects: { J: 1 } },
+      { text: "Strongly disagree", effects: { J: 2 } }
     ]
   }
 ];
-
-// duplicate to reach 16
-while (quizData.length < 16) {
-  quizData.push(JSON.parse(JSON.stringify(quizData[quizData.length % 4])));
-}
 
 let currentQuestion = 0;
 let selectedEffects = null;
